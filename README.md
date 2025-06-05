@@ -1,1 +1,1 @@
-# project-reactor-example
+# An example of using reactive programming (Project Reactor)

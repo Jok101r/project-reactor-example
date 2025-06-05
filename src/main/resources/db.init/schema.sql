@@ -1,0 +1,23 @@
+CREATE TABLE IF NOT EXISTS T_BOOK
+(
+    id     UUID NOT NULL PRIMARY KEY,
+    title  VARCHAR(255),
+    author VARCHAR(255)
+
+);
+
+CREATE TABLE IF NOT EXISTS T_MAGAZINE
+(
+    id     UUID NOT NULL PRIMARY KEY,
+    title  VARCHAR(255),
+    author VARCHAR(255)
+
+);
+
+CREATE TABLE IF NOT EXISTS T_ORDER
+(
+    id          UUID NOT NULL PRIMARY KEY,
+    book_id     UUID,
+    magazine_id UUID
+
+);
